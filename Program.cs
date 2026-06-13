@@ -1,10 +1,5 @@
-﻿string opcao = "", nome = "";
-decimal saldo = 0, chequeEspecial = 0;
-bool isContaCriada = false;
-
-const string TITULO = "---- MongaBank - Seu dinheiro rende mais! ----\n";
-
-const string MENU = @"Selecione uma opção abaixo:
+﻿ExibirTitulo("---- MongaBank - Seu dinheiro rende mais! ----");
+ExibirMenu(@"Selecione uma opção abaixo:
 
 0 - Abrir Conta Corrente
 1 - Saldo
@@ -12,7 +7,14 @@ const string MENU = @"Selecione uma opção abaixo:
 3 - Depósito
 4 - Encerrar conta e sair
 
-Opção: ";
+Opção: ";)
+
+string opcao = "", nome = "";
+decimal saldo = 0, chequeEspecial = 0;
+bool isContaCriada = false;
+
+string Titulo = ExibirTitulo;
+string Menu = ExibirMenu;
 
 
 
